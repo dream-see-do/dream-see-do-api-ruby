@@ -68,7 +68,7 @@ In your tests, you can register all models that you'd like mocked in before bloc
 
 ```ruby
 before do
-  dreamseedo_api_register_double('DreamSeeDoApi::Course')
+  dreamseedo_api_register_instance_double('DreamSeeDoApi::Course')
 end
 ```
 
@@ -79,7 +79,7 @@ For Example:
 ```ruby
 
 before do
-  dreamseedo_api_register_double('DreamSeeDoApi::Course')
+  dreamseedo_api_register_instance_double('DreamSeeDoApi::Course')
 end
 
 context 'mocking create' do
