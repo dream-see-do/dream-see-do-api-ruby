@@ -1,6 +1,6 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'dreamseedo-api/version'
+require 'dream-see-do-api/version'
 
 Gem::Specification.new do |gem|
   gem.add_development_dependency 'bundler', '~> 2.1.4'
@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.licenses      = %w[MIT]
   gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- spec/*`.split("\n")
-  gem.name          = 'dreamseedo-api-ruby'
+  gem.name          = 'dream-see-do-api'
   gem.require_paths = %w[lib]
-  gem.version       = DreamseedoApi::VERSION
+  gem.version       = DreamSeeDoApi::VERSION
 end

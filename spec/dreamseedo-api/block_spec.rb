@@ -1,5 +1,5 @@
 require 'helper'
 
-describe DreamseedoApi::Block do
-  subject { DreamseedoApi::Block }
+describe DreamSeeDoApi::Block do
+  subject { DreamSeeDoApi::Block }
 end

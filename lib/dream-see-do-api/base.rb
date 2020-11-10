@@ -1,8 +1,8 @@
-# Base resource for models on Shape API
+# Base resource for models on Dream See Do API V2
 
 require 'securerandom'
 
-module DreamseedoApi
+module DreamSeeDoApi
   class Base < ::JsonApiClient::Resource
     APP_URL = 'https://www.dreamseedo.org'.freeze
     API_URL = APP_URL + '/api/v2'.freeze

@@ -15,7 +15,7 @@ end
 require 'rspec'
 require 'rack/test'
 require 'webmock/rspec'
-require 'dreamseedo-api'
+require 'dream-see-do-api'
 require 'byebug'
 
 RSpec.configure do |config|
@@ -27,7 +27,7 @@ RSpec.configure do |config|
 
   config.before(:each) do
     @api_token = 'test-12323'
-    DreamseedoApi::Base.configure(
+    DreamSeeDoApi::Base.configure(
       api_token: @api_token,
     )
   end

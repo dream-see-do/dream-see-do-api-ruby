@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dreamseedo-api-ruby (0.1.0)
+    dream-see-do-api (0.1.0)
       json_api_client (~> 1.17, >= 1.17.1)
 
 GEM
@@ -163,7 +163,7 @@ DEPENDENCIES
   bundler (~> 2.1.4)
   byebug
   coveralls
-  dreamseedo-api-ruby!
+  dream-see-do-api!
   guard
   guard-rspec
   json

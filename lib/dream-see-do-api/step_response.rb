@@ -1,4 +1,4 @@
-module DreamseedoApi
+module DreamSeeDoApi
   class StepResponse < Base
   end
 end

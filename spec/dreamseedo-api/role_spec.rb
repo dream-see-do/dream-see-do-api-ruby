@@ -1,5 +1,5 @@
 require 'helper'
 
-describe DreamseedoApi::Role do
-  subject { DreamseedoApi::Role }
+describe DreamSeeDoApi::Role do
+  subject { DreamSeeDoApi::Role }
 end

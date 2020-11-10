@@ -1,5 +1,5 @@
 require 'helper'
 
-describe DreamseedoApi::Group do
-  subject { DreamseedoApi::Group }
+describe DreamSeeDoApi::Group do
+  subject { DreamSeeDoApi::Group }
 end

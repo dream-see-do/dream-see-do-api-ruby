@@ -1,23 +1,23 @@
-module DreamseedoApiMocks
+module DreamSeeDoApiMocks
   # To include these, add to your spec helper:
   #
-  #   require 'dreamseedo-api-mocks'
+  #   require 'dream-see-do-api-mocks'
   #
   #   RSpec.configure do |config|
-  #     config.include DreamseedoApiMocks
+  #     config.include DreamSeeDoApiMocks
   #   end
   #
   # See the README for usage details
   #
 
-  def dreamseedo_api_register_instance_double(model_name, class_doubles = :all_class_doubles)
+  def dream_see_do_api_register_instance_double(model_name, class_doubles = :all_class_doubles)
     klass = model_name.safe_constantize
     underscore_klass = klass.model_name.param_key
 
     # Define an instance double for this model
     #
     define_singleton_method "#{underscore_klass}_instance_double" do |attrs = {}|
-      default_instance_attrs = dreamseedo_api_default_instance_attrs(klass)
+      default_instance_attrs = dream_see_do_api_default_instance_attrs(klass)
       double(
         model_name,
         default_instance_attrs.deep_merge(attrs || {}),
@@ -28,14 +28,14 @@ module DreamseedoApiMocks
 
     return unless class_doubles.is_a?(Hash)
 
-    dreamseedo_api_register_class_doubles(model_name, class_doubles)
+    dream_see_do_api_register_class_doubles(model_name, class_doubles)
   end
 
-  def dreamseedo_api_register_class_doubles(model_name, default_params)
+  def dream_see_do_api_register_class_doubles(model_name, default_params)
     klass = model_name.safe_constantize
     underscore_klass = klass.model_name.param_key
     # Define class dobule that matches lowercase class name,
-    # e.g. `dreamseedo_api_course_double`
+    # e.g. `dream_see_do_api_course_double`
     #
     # You can then pass params to be used for default return values
     #
@@ -67,7 +67,7 @@ module DreamseedoApiMocks
   # Default Instance Attributes
   # These will be present on all instance doubles
 
-  def dreamseedo_api_default_instance_attrs(klass)
+  def dream_see_do_api_default_instance_attrs(klass)
     {
       id: 1,
       errors: double(

@@ -1,4 +1,4 @@
-module DreamseedoApi
+module DreamSeeDoApi
   class Event < Base
   end
 end

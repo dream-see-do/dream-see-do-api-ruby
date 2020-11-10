@@ -1,4 +1,4 @@
-module DreamseedoApi
+module DreamSeeDoApi
   class User < Base
 
   end

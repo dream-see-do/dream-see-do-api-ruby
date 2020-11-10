@@ -2,7 +2,7 @@ AllCops:
   Include:
     - '**/Rakefile'
     - '**/config.ru'
-    - 'lib/shape-api/**/*'
+    - 'lib/dream-see-do-api/**/*'
     - 'spec/**/*'
   Exclude:
     - Gemfile*

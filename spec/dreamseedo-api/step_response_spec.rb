@@ -1,5 +1,5 @@
 require 'helper'
 
-describe DreamseedoApi::StepResponse do
-  subject { DreamseedoApi::StepResponse }
+describe DreamSeeDoApi::StepResponse do
+  subject { DreamSeeDoApi::StepResponse }
 end

@@ -1,4 +1,4 @@
-module DreamseedoApi
+module DreamSeeDoApi
   class Step < Base
   end
 end

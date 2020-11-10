@@ -1,4 +1,4 @@
-module DreamseedoApi
+module DreamSeeDoApi
   class Role < Base
   end
 end

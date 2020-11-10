@@ -1,4 +1,4 @@
-module DreamseedoApi
+module DreamSeeDoApi
   class Response < Base
   end
 end

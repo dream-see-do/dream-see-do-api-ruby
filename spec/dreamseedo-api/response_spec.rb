@@ -1,5 +1,5 @@
 require 'helper'
 
-describe DreamseedoApi::Response do
-  subject { DreamseedoApi::Response }
+describe DreamSeeDoApi::Response do
+  subject { DreamSeeDoApi::Response }
 end
