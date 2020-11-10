@@ -14,13 +14,21 @@ Then `bundle install`.
 
 ## Usage
 
-These three configuration variables must be set in an initializer (e.g. `/config/initializers/dreamseedo_api.rb`):
+These two configuration variables must be set in an initializer (e.g. `/config/initializers/dreamseedo_api.rb`):
 
 ```
 require 'dreamseedo-api'
 
 DreamSeeDoApi::Base.configure(
-  url: 'https://www.dreamseedo.org/api/v2',
+  api_token: ENV['DREAMSEEDO_API_TOKEN']
+)
+```
+
+If you are using a staging or other API URL, you can provide the `api_url` parameter:
+
+```
+DreamSeeDoApi::Base.configure(
+  api_url: 'https://www.dreamseedo.org/api/v2',
   api_token: ENV['DREAMSEEDO_API_TOKEN']
 )
 ```
@@ -82,7 +90,7 @@ context 'mocking create' do
 
   # Mocks DreamseedoApi::Course and sets `create` to return instance
   before do
-    dreamseedo_api_collection_double(create: collection_instance)
+    dreamseedo_api_collection_double(create: course_instance)
   end
 
   it 'should return values' do

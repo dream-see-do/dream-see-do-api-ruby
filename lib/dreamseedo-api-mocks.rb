@@ -35,7 +35,7 @@ module DreamseedoApiMocks
     klass = model_name.safe_constantize
     underscore_klass = klass.model_name.param_key
     # Define class dobule that matches lowercase class name,
-    # e.g. `dreamseedo_api_collection_double`
+    # e.g. `dreamseedo_api_course_double`
     #
     # You can then pass params to be used for default return values
     #

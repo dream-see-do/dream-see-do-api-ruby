@@ -1,6 +1,8 @@
 require 'json_api_client'
 
-if defined?(ActiveSupport) == 'constant'
+puts defined?(JsonApiClient::Paginating::Paginator.page_param)
+
+if defined?(JsonApiClient::Paginating::Paginator.page_param)
   # Use correct page parameters for Network API
   # (only works when included in Rails environment)
   JsonApiClient::Paginating::Paginator.page_param = 'number'

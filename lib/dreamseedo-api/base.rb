@@ -7,17 +7,16 @@ module DreamseedoApi
     APP_URL = 'https://www.dreamseedo.org'.freeze
     API_URL = APP_URL + '/api/v2'.freeze
 
-    class_attribute :api_token, :app_url
+    class_attribute :api_token
 
     # There is a bug with included resources where ID is cast as an integer,
     # and then the resource can't be auto-linked
     property :id, type: :string
     property :number, type: :float
 
-    def self.configure(api_token:, api_url: API_URL, app_url: APP_URL)
+    def self.configure(api_token:, api_url: API_URL)
       self.api_token = api_token
       self.site = api_url
-      self.app_url = app_url
 
       # Sets up connection with token
       connection do |connection|

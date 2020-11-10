@@ -1,5 +1,5 @@
 require 'helper'
 
-describe DreamseedoApi::Application do
-  subject { DreamseedoApi::Application }
+describe DreamseedoApi::Course do
+  subject { DreamseedoApi::Course }
 end
