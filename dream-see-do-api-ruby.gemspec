@@ -4,7 +4,7 @@ require 'dream-see-do-api/version'
 
 Gem::Specification.new do |gem|
   gem.add_development_dependency 'bundler', '~> 2.1.4'
-  gem.add_dependency 'json_api_client', '~> 1.18', '>= 1.18.0'
+  gem.add_dependency 'json_api_client', '~> 1.21', '>= 1.21.0'
   gem.authors       = ['Josh Schwartzman']
   gem.email         = %w[josh@dreamseedo.org]
   gem.description   = 'Dream See Do API wrapper.'

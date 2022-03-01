@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dream-see-do-api (0.1.6)
+    dream-see-do-api (0.1.7)
       json_api_client (~> 1.18, >= 1.18.0)
 
 GEM
