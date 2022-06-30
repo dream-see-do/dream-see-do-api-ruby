@@ -1,7 +1,5 @@
 require 'json_api_client'
 
-puts defined?(JsonApiClient::Paginating::Paginator.page_param)
-
 if defined?(JsonApiClient::Paginating::Paginator.page_param)
   # Use correct page parameters for Network API
   # (only works when included in Rails environment)
