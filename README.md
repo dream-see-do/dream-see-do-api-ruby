@@ -7,7 +7,7 @@ Ruby wrappers for Dream See Do V2 API.
 Add to your `Gemfile`:
 
 ```ruby
-gem 'dreamseedo-api-ruby', git: 'https://github.com/geeosh/dreamseedo-api-ruby.git'
+gem 'dreamseedo-api-ruby', git: 'https://github.com/dream-see-do/dream-see-do-api-ruby.git'
 ```
 
 Then `bundle install`.
@@ -36,17 +36,46 @@ DreamSeeDoApi::Base.configure(
 Then you can use any of the supported models:
 
 ```
+DreamSeeDoApi::Activity
 DreamSeeDoApi::Block
+DreamSeeDoApi::BlockResponse
+DreamSeeDoApi::Certificate
+DreamSeeDoApi::Comment
+DreamSeeDoApi::ConversationParticipant
+DreamSeeDoApi::Conversation
 DreamSeeDoApi::Course
+DreamSeeDoApi::CustomNotification
+DreamSeeDoApi::EngagementScore
+DreamSeeDoApi::EventAttendee
 DreamSeeDoApi::Event
+DreamSeeDoApi::Form
+DreamSeeDoApi::FormResponse
 DreamSeeDoApi::Group
+DreamSeeDoApi::Hit
+DreamSeeDoApi::Invite
+DreamSeeDoApi::Like
+DreamSeeDoApi::Location
+DreamSeeDoApi::Message
+DreamSeeDoApi::Notification
+DreamSeeDoApi::Plan
 DreamSeeDoApi::Profile
+DreamSeeDoApi::Resource
 DreamSeeDoApi::Response
 DreamSeeDoApi::Role
 DreamSeeDoApi::StepResponse
 DreamSeeDoApi::Step
+DreamSeeDoApi::Theme
+DreamSeeDoApi::TimeAvailability
+DreamSeeDoApi::TimeBookingTemplate
+DreamSeeDoApi::TimeBooking
+DreamSeeDoApi::TruScoreSurveyResponse
+DreamSeeDoApi::UpNextItem
 DreamSeeDoApi::User
+DreamSeeDoApi::Video
+DreamSeeDoApi::ZoomMeeting
 ```
+
+_Note: there are some other models in this library that do not have their own endpoint, but can be requested as a sideload._
 
 To enable detailed request logging, you can set `ENV['DEBUG'] = '1'`
 
